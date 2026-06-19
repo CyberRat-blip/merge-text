@@ -12,7 +12,7 @@ internal static class NaniMerger
             return false;
         }
 
-        return text[0] is not ('@' or '#' or ';');
+        return text[0] is not ('@' or '#' or ';' or '{');
     }
 
     public static int CountDialogueLines(IEnumerable<string> lines)
