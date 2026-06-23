@@ -29,8 +29,8 @@ partial class MainForm : Form
     public MainForm()
     {
         Text = "Merge Nani";
-        MinimumSize = new Size(720, 480);
-        Size = new Size(760, 500);
+        MinimumSize = new Size(800, 560);
+        Size = new Size(900, 640);
         StartPosition = FormStartPosition.CenterScreen;
         Font = new Font("Segoe UI", 9F);
 
@@ -42,6 +42,7 @@ partial class MainForm : Form
 
         InitializeLayout();
         WireUiEvents();
+        WireBatchUiEvents();
     }
 
     private void WireUiEvents()
